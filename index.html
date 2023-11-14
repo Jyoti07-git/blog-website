@@ -1,0 +1,69 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Travel Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Your Travel Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="#post1">Exploring Beaches</a></li>
+        <li><a href="#post2">Mountain Journey</a></li>
+        <li><a href="#post3">Urban Adventures</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article id="post1">
+      <h2>Exploring the Serene Beaches</h2>
+      <p class="date">Date of publication: <span id="date1">July 10, 2023</span></p>
+      <img src="images/beach.jpg" alt="Beach Image">
+      <p>Escape to the tranquil beaches and experience the beauty of the sea...</p>
+      <div class="comments">
+        <h3>Comments</h3>
+        <div id="comments1"></div>
+        <input type="text" id="name1" placeholder="Your Name">
+        <textarea id="comment1" placeholder="Your Comment"></textarea>
+        <button onclick="submitComment(1)">Submit Comment</button>
+      </div>
+    </article>
+
+    <article id="post2">
+      <h2>A Journey Through the Mountains</h2>
+      <p class="date">Date of publication: <span id="date2">July 15, 2023</span></p>
+      <img src="images/mountain.jpeg" alt="Mountain Image">
+      <p>Embark on a breathtaking journey through the majestic mountains...</p>
+      <div class="comments">
+        <h3>Comments</h3>
+        <div id="comments2"></div>
+        <input type="text" id="name2" placeholder="Your Name">
+        <textarea id="comment2" placeholder="Your Comment"></textarea>
+        <button onclick="submitComment(2)">Submit Comment</button>
+      </div>
+    </article>
+
+    <article id="post3">
+      <h2>City Lights and Urban Adventures</h2>
+      <p class="date">Date of publication: <span id="date3">July 20, 2023</span></p>
+      <img src="images/city.jpeg" alt="City Image">
+      <p>Experience the vibrant energy of the city lights and embark on urban adventures...</p>
+      <div class="comments">
+        <h3>Comments</h3>
+        <div id="comments3"></div>
+        <input type="text" id="name3" placeholder="Your Name">
+        <textarea id="comment3" placeholder="Your Comment"></textarea>
+        <button onclick="submitComment(3)">Submit Comment</button>
+      </div>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
